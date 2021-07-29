@@ -26,9 +26,17 @@ Prediction
         <form method="post" action="{% url 'prediction' %}">
             {% csrf_token %}
             <select name="drop1">
-                {% for i in Country %}
-                <option value="{{i}}">{{i}}</option>
-                {% endfor %}
+                
+                <option value="US">US</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="Spain">Spain</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="UK">UK</option>
+                <option value="Italy">Italy</option>
+                <option value="Russia">Russia</option>
+                
             </select>
             <input type="submit" value="Submit" style="background-color:sandybrown;">
         </form>
